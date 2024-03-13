@@ -1,14 +1,14 @@
 name: continuous-integration
 
 on:
-  push;
+  push:
       branches-ignore: [ga-ignore-*]
-  pull_request;
+  pull_request:
       branches-ignore: [ga-ignore-*]
 
 jobs:
 
-    coding-style;
+    coding-style:
         name: Run Banana
         runs-on: ubuntu-latest
         container:
